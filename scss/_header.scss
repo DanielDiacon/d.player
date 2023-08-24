@@ -1,0 +1,37 @@
+.menu {
+   &__mode {
+      height: 40px;
+      width: 40px;
+      margin-left: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50px;
+      cursor: pointer;
+      background: var(--black-p);
+      position: relative;
+   }
+   &__dark-icon {
+      pointer-events: none;
+      color: var(--white-p);
+      height: 25px;
+      width: 25px;
+      position: absolute;
+      top: 7.5px;
+      left: 7.5px;
+	}
+}
+.menu__dark-icon-one {
+   opacity: 1;
+   transition: .1s;
+}
+.menu__dark-icon-two {
+   opacity: 0;
+   transition: .1s;
+}
+body.darkmode .menu__dark-icon-one {
+   opacity: 0;
+}
+body.darkmode .menu__dark-icon-two {
+   opacity: 1;
+}

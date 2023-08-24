@@ -1,0 +1,74 @@
+// import fonts/font <=>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&display=swap');
+// default font / default font size <=>
+$fontFamily: 'Montserrat', sans-serif;
+$fontSize: 14;
+// base colors <=>
+$black: #101010;
+$white: #ffffff;
+$mainColor: #ADFF2F;
+:root{
+   --mainColor: #ADFF2F;
+   --black-p: #0c0c0f;
+	--black-s: #1e1e22;
+	--white-p: #ebebf0;
+	--white-s: #cbcad0;
+	--header: #bdbdbe;
+
+}
+
+//dark mode and light <=>
+.darkmode{
+   --mainColor: #ADFF2F;
+   --black-p: #ebebf0;
+	--black-s: #cacacf;
+	--white-p: #0c0c0f;
+	--white-s: #1a1a1b;
+	--header: #242425;
+
+}
+// max width for container <=>
+$maxWidthContainer: 1250;
+// size gadjes for adapted and other <=>
+$tablet: 991.98px;
+$mobile: 767.98px;
+$mobileSmall: 479.98px;
+// null style <=>
+@import '_null.scss';
+// general style <=>
+body {
+   line-height: 1.4;
+   caret-color: $mainColor;
+   font-family: $fontFamily;
+   font-size: $fontSize + px;
+   //scroll block when open burger
+   .lock & {
+      overflow: hidden;
+      touch-action: none;
+   }
+}
+// wrapper <=>
+.wrapper {
+   min-height: 100%;
+   display: flex;
+   flex-direction: column;
+   overflow: hidden;
+}
+// container <=>
+.container {
+   max-width: $maxWidthContainer + px;
+   margin: 0 auto;
+   //fix for slider
+   > * {
+      min-width: 0;
+   }
+}
+// the footer to the bottom of the page <=>
+main {
+   flex: 1 1 auto;
+}
+//import scss modules<=>
+@import '_header.scss';
+@import '_footer.scss';
+@import '_loading.scss';
+@import '_main.scss';

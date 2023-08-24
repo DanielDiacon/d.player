@@ -1,0 +1,26 @@
+.loader {
+   z-index: 200;
+   position: absolute;
+   width: 100%;
+   height: 100vh;
+   background: var(--white-p);
+   transition: 0.5s;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.spinner {
+   width: 11.2px;
+   height: 11.2px;
+   animation: spinner-z355kx 1s infinite linear;
+   border-radius: 11.2px;
+   box-shadow: 28px 0px 0 0 var(--black-p), 17.4px 21.8px 0 0 var(--black-p),
+      -6.2px 27.2px 0 0 var(--black-p), -25.2px 12px 0 0 var(--black-p),
+      -25.2px -12px 0 0 var(--black-p), -6.2px -27.2px 0 0 var(--black-p),
+      17.4px -21.8px 0 0 var(--black-p);
+}
+@keyframes spinner-z355kx {
+   to {
+      transform: rotate(360deg);
+   }
+}
