@@ -83,7 +83,7 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
-      border-radius: 10px;
+      border-radius: 20px;
    }
    &__link {
       width: 40px;
@@ -139,6 +139,7 @@
       background: var(--black-s);
       cursor: pointer;
       z-index: 2;
+      user-select: none;
    }
    &__progress-bar {
       height: inherit;
@@ -151,15 +152,10 @@
       content: '';
       position: absolute;
       right: 0;
-      top: 0px;
       width: 100%;
-      height: 6px;
-      background: transparent;
       border-radius: 25px;
       transition: 0.15s;
-   }
-   &__progress:hover .player__progress-bar::after {
-      background: var(--black-p);
+      background: var(--mainColor);
       height: 10px;
       top: -2px;
    }

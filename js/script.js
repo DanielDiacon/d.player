@@ -13,7 +13,7 @@ showMusicBtn = wrapper.querySelector('#moreMusic');
 closeMusicBtn = wrapper.querySelector('#closeMusic');
 bgMusicColor = wrapper.querySelector('.bgColor');
 
-let musicIndex = 2;
+let musicIndex = 1;
 
 window.addEventListener('load', () => {
    loadMusic(musicIndex);

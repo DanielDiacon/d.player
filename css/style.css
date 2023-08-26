@@ -280,7 +280,7 @@ body.darkmode .menu__dark-icon-two {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 .player__link {
   width: 40px;
@@ -329,6 +329,9 @@ body.darkmode .menu__dark-icon-two {
   background: var(--black-s);
   cursor: pointer;
   z-index: 2;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 .player__progress-bar {
   height: inherit;
@@ -341,15 +344,10 @@ body.darkmode .menu__dark-icon-two {
   content: "";
   position: absolute;
   right: 0;
-  top: 0px;
   width: 100%;
-  height: 6px;
-  background: transparent;
   border-radius: 25px;
   transition: 0.15s;
-}
-.player__progress:hover .player__progress-bar::after {
-  background: var(--black-p);
+  background: var(--mainColor);
   height: 10px;
   top: -2px;
 }
